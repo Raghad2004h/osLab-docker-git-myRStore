@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- هنا راس الصفحة كتبت اسم المتجر وال 
+        nav -->
+    <header>
+        <h1>متجر الأميرات</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">الرئيسية</a></li>
+                <li><a href="signup.html">التسجيل</a></li>
+                <li><a href="contactus.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- اول جزئية هنا طريقة التواصل باستدخدام فورم واستخدمت كمان ال 
+        fieldset -->
+        <section class="log">
+            <fieldset>
+                <legend>
+                    <h2>تواصلي معنا</h2>
+                </legend>
+                <p>يسعدنا تواصلك معنا لأي استفسار او اقتراح</p>
+                <form>
+                    <label>
+                        الاسم</label>
+                        <input class="r" type="text" name="name" required>
+                    <br>
+                    <label>
+                        البريد الالكتروني</label>
+                        <input class="r" type="email" name="email" placeholder="one@gmail.com" required>
+                    <br>
+                    <label>
+                        الموضوع</label>
+                        <input class="r" type="text" name="subject" required>
+                    <br>
+                    <label>
+                        الرسالة</label>
+                        <textarea name="massage" required></textarea>
+                    <br>
+                    <input type="submit" value="ارسال">
+                </form>
+            </fieldset>
+        </section>
+        <!-- هنا تاني جزئية نسخت رابط خريطة جوجل ماب الخاص
+        بصفحة الجامعة الاسلامية ونسخته متل ما هو -->
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.3552105180916!2d34.4393177!3d31.514402599999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f405b256d2b%3A0xb9c1e848050d3493!2z2KfZhNis2KfZhdi52Kkg2KfZhNil2LPZhNin2YXZitipINmB2Yog2LrYstip!5e0!3m2!1sar!2s!4v1747476161461!5m2!1sar!2s"
+                width="600" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <!-- وهنا اخر الصفحة فيها نفس النهاية لكل صفحة -->
+    <footer>
+        <p>العنوان | غزة_ فلسطين</p>
+        <p>رقم الجوال | 0591111111</p>
+        <p><bdi>الايميل | princess@gmail.com</bdi></p>
+        <p>تاعبعونا على مواقع التواصل الاجنماعي كمان ^_^
+            <a href="facebook.com">فيسبوك</a>
+            <a href="instgram.com">انتستغرام</a>
+            <a href="tixtok.com">تيك توك</a>
+        </p>
+        <p>&copy; جميع الحقوق محفوظة <a href="#">سياسة الخصوصية</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <TITLE>التسجيل</TITLE>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        //  conditionals
+        let age = prompt("Enter your age")
+        if(age>=18){
+            alert("You are eligible to sign up.")
+        }
+        else{
+            alert("You must be at least 18 years old to sign up.")
+        }
+
+        //  email field is not empty
+        // in my html I delete required word from email input to see the result to this function
+        function validateForm() {
+            let email = document.getElementsByName("email")[0].value;
+            if (email === "") {
+            alert("Please fill the email field.");
+            return false;  // بمنع ارسال النموذج 
+            }
+        return true;
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- هنا راس الصفحة كتبت فيه عنوان المتجر -->
+    <header>
+        <h1>متجر الاميرات</h1>
+    </header>
+    <!-- هنا راح اكتب كل محتويات الصفحة -->
+    <main>
+        <section class="sign">
+            <p>سجلي معنا للحصول على اخر العروضات</p>
+            <div class="log">
+                <h2>التسجيل</h2>
+                <!-- عملت الفورم وخليتها تروح عل الصفحة الرئيسة لما نعمل تسجيل -->
+                <form action="homepage.html" method="get" onsubmit="return validateForm()">
+                    <label>
+                        الاسم الكامل 
+                        <input class="r" type="text" name="name" required>
+                    </label><br>
+                    <label>
+                        البريد الالكتروني
+                        <input class="r" type="email" name="email" placeholder="one@gmail.com">
+                    </label><br>
+                    <label>
+                        كلمة المرور 
+                        <input class="r" type="password" name="password" required>
+                    </label><br>
+                    <label>
+                        تأكيد كلمة المرور 
+                        <input class="r" type="password" name="Confirmpassword" required>
+                    </label><br>
+                    <label>
+                        الجنس 
+                        <input type="radio" name="gender" value="Female" required>أنثى
+                        <input type="radio" name="gender" value="Male">ذكر
+                    </label><br>
+                    <label>
+                        <input type="checkbox" required> أوافق على الشروط والاحكام
+                    </label><br>
+                    <input type="submit" value="تسجيل">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- هنا اخر الصفحة فيها نفس المعلومات بكل صفحة -->
+    <footer>
+        <p>العنوان | غزة_ فلسطين</p>
+        <p>رقم الجوال | 0591111111</p>
+        <p><bdi>الايميل | princess@gmail.com</bdi></p>
+        <p>تاعبعونا على مواقع التواصل الاجنماعي كمان ^_^
+            <a href="facebook.com">فيسبوك</a>
+            <a href="instgram.com">انتستغرام</a>
+            <a href="tixtok.com">تيك توك</a>
+        </p>
+        <p>&copy; جميع الحقوق محفوظة <a href="#">سياسة الخصوصية</a></p>
+    </footer>
+</body>
+
+</html>

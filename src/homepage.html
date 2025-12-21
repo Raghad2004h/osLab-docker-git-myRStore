@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>متجر الأميرات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- بالبداية عرفت header
+            وكتبت فيه عنوان مشروعي و
+        nav -->
+        <h1>متجر الأميرات </h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">الرئيسية</a></li>
+                <li><a href="signup.html">التسجيل</a></li>
+                <li><a href="contactus.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- هلا كل محتويات صفحتي حطيتها بال 
+    main  -->
+    <main>
+        <!--هاي الجزئية ضفت فقط عان مشروع جافا سكريبت-->   
+            <button class="change" onclick="changeBackground()">Change Background</button>
+            <!-- <div id="operators" class="banner"></div> -->
+            
+            <script src="script.js"></script>
+
+        <!-- كل جزئية راح اكتبها ب
+        section
+        عشان افصلها عن اي جزئية واقدر اتحكم بتصميمها لوحدها -->
+        <!-- اول جزئية هنا عملتها تعريف سريع عن متجري الخاص -->
+        <section class="hello">
+            <h2>مرحبا بكم في متجر الأميرات</h2>
+            <p>متجر الاميرات هو المكان الخاص بكل مستلزمات البنات من مكياج وعطور واكسسوارات وهدايا مميزة</p>
+        </section>
+        
+        <!-- هنا بتاني جزئية راح اضيف صور توضيحية عن منتجاتي الي بالمتجر -->
+        <section class="im">
+            <h2> لمحة عن منتجاتنا:</h2>
+            <!-- استخدمت
+            figure
+            عشان اقدر افصل الصور عن بعض كمان عشان اضيف وصف خاص لكل صورة -->
+            <div class="images">
+                <figure>
+                    <img src="images/hair accessories.jpeg" alt="اكسسوارات الشعر" width="200" height="200">
+                    <figcaption>اكسسوارات الشعر</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hair machines.jpeg" alt="اجهزة الشعر" width="200" height="200">
+                    <figcaption>اجهزة الشعر</figcaption>
+                </figure>
+                <figure>
+                        <img src="images/Makeup aesthetic.jpeg" alt="مكياج" width="200" height="200">
+                        <figcaption>مكياج</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mask.jpeg" alt="ماسكات للبشرة" width="200" height="200">
+                        <figcaption>ماسكات للبشرة</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/care bear mug.jpeg" alt="مجات لطيفة" width="200" height="200">
+                        <figcaption>مجات لطيفة</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/perfumes.jpeg" alt="عطور" width="200" height="200">
+                    <figcaption>عطور</figcaption>
+                </figure>
+            </div>
+        </section>
+        <!-- بالجزئية هاي كتبت كلام عن لي لازم يختاروا متجري -->
+        <section class="whay">
+            <h3>لماذا تختارينا </h3>
+            <p>هنا عالم وردي خاص بكل فتاة || بنهتم بكل تفاصيلك الخاصة الي بتزيدك جمال</p>
+            <p>نقدم جودة عالية وخدمة عملاء ممتازة وأسعار مناسبة لكل البنات </p>
+        </section>
+        <!-- وهنا جبت فيديو من اليوتيوب قريب من فكرة مشروعي ونسخت كود التضمين ولصقته متل ما هو
+        لانه ما عندي اي اضافات حاليا لتصميم الفيديو -->
+        <section class="video">
+            <h3>فيديو عنا ^-^</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rPQ3ynU3D6E?si=J89NdGA2OxQWt7Nd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+    <!-- وهاي نهاية الصفحة تبعتي كتبت فيها المعلومات عن المتجر
+    وروابط لمواقع التواصل الاجتماعي الوهمية لانه ما عندي متجر خاص ^^ -->
+    <footer>
+        <p>العنوان | غزة_ فلسطين</p>
+        <p>رقم الجوال | 0591111111</p>
+        <p><bdi>الايميل | princess@gmail.com</bdi></p>
+        <p>تابعونا على مواقع التواصل الاجتماعي كمان ^_^
+            <a href="facebook.com">فيسبوك</a>
+            <a href="instgram.com">انتسغرام</a>
+            <a href="tixtok.com">تيك توك</a>
+        </p>
+        <!-- وهنا حفظت حقوق الصفحة وسياسة الخصوصية -->
+        <p>&copy; جميع الحقوق محفوظة <a href="#">سياسة الخصوصية</a></p>
+    </footer>
+</body>
+
+</html>
