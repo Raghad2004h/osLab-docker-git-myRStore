@@ -112,3 +112,14 @@ Trigger: Every time code is pushed to the main branch or a Pull Request is opene
 What it does: Builds the Docker image for the project. (Optional: can also run tests if added later.)
 
 Optimization: Uses Docker Buildx (docker/setup-buildx-action@v2) to ensure faster and more efficient builds, following modern DevOps standards.
+
+---
+
+## Bonus C: Multi-stage Docker Build
+
+I implemented a **multi-stage Docker build** to reduce the final image size.
+
+- **What it does:**
+  - Stage 1 builds all dependencies and prepares the project.
+  - Stage 2 copies only the necessary files to the production image, keeping it small and efficient.
+- **Benefit:** Reduces image size, faster deployments, and follows professional Docker practices.
