@@ -29,6 +29,12 @@ Docker is included to support consistent setup and execution.
 docker build -t princess-store .
 ```
 
+3. Run the container:
+
+```bash
+docker run -p 8080:80 princess-store
+```
+
 ---
 
 ## How to Stop the Container and Clean Up (Basic)
@@ -52,32 +58,6 @@ docker rm <container_id>
 ```
 
 ---
-
-## Configuration Notes
-
-- The app runs on **host port 8080**, mapped to **container port 80**.
-- No environment variables are required for this project.
-- Docker ensures the project behaves the same on any machine.
-- Make sure Docker is running before executing any commands.
-
----
-
-## How to Test It
-
-1. Open your browser and visit:
-
-## Configuration Notes
-
-- The app runs on **host port 8080**, mapped to **container port 80**.
-- No environment variables are required for this project.
-- Docker ensures the project behaves the same on any machine.
-- Make sure Docker is running before executing any commands.
-
----
-
-## How to Test It
-
-1. Open your browser and visit:
 
 ## Configuration Notes
 
