@@ -82,3 +82,33 @@ docker rm <container_id>
 
 - Created entirely from scratch for the **Web 1 course**.
 - No open-source project was used as a base.
+
+---
+
+## Bonus A: Docker Compose
+
+I added a docker-compose.yml file to simplify running the project, especially if there are multiple services.
+
+File Path: docker-compose.yml
+
+What it does: Allows you to build and start the project with a single command: docker-compose up
+
+Ports: Maps host port 8080 to container port 80
+
+Restart Policy: Automatically restarts the container unless stopped manually
+
+Stop the project: Use docker-compose down to stop and remove containers
+
+---
+
+## Bonus B: CI/CD with GitHub Actions
+
+I successfully implemented a GitHub Actions Workflow to automate the building of my Docker image.
+
+File Path: .github/workflows/docker-build.yml
+
+Trigger: Every time code is pushed to the main branch or a Pull Request is opened, the workflow runs automatically.
+
+What it does: Builds the Docker image for the project. (Optional: can also run tests if added later.)
+
+Optimization: Uses Docker Buildx (docker/setup-buildx-action@v2) to ensure faster and more efficient builds, following modern DevOps standards.
