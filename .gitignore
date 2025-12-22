@@ -11,5 +11,3 @@ Thumbs.db
 # Node (if added later)
 node_modules/
 
-# Docker
-docker-compose.yml
