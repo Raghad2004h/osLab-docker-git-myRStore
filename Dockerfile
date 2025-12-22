@@ -7,16 +7,17 @@ COPY . .
 
 # Stage 2: Production stage
 FROM nginx:alpine
+# الانتقال لمجلد nginx
 WORKDIR /usr/share/nginx/html
-# مسح ملفات nginx الافتراضية لضمان نظافة المجلد
+# مسح أي ملفات قديمة لضمان النظافة
 RUN rm -rf ./*
-# نسخ الملفات من المرحلة الأولى
+# نسخ المحتويات مباشرة للمجلد الحالي
 COPY --from=build /app .
 
-# تثبيت curl للفحص
+# تثبيت curl ضروري جداً لنجاح الأكشن
 RUN apk add --no-cache curl
 
-# التأكد من صحة المنفذ والرابط
+# فحص الحالة
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD curl -f http://localhost/ || exit 1
 
