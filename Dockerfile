@@ -1,17 +1,12 @@
-# Use Nginx as base image
+# Stage 1: Build stage
+FROM node:18-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+# If you have a build step, uncomment the next line
+# RUN npm run build
+
+# Stage 2: Production stage
 FROM nginx:alpine
-
-# Set working directory
-WORKDIR /usr/share/nginx/html
-
-# Remove default Nginx files
-RUN rm -rf ./*
-
-# Copy project files to Nginx directory
-COPY src/ .
-
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx server
-CMD ["nginx", "-g", "daemon off;"]
+COPY --from=build /app /usr/share/nginx/html
