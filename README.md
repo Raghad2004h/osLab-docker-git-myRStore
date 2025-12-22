@@ -123,3 +123,13 @@ I implemented a **multi-stage Docker build** to reduce the final image size.
   - Stage 1 builds all dependencies and prepares the project.
   - Stage 2 copies only the necessary files to the production image, keeping it small and efficient.
 - **Benefit:** Reduces image size, faster deployments, and follows professional Docker practices.
+
+---
+
+## Bonus D: Healthcheck
+
+I added a **Docker Healthcheck** to ensure the container is running correctly.
+
+- **What it does:** Docker automatically checks the container's health every 30 seconds.
+- **Endpoint:** Uses `http://localhost:80` to verify the service is responsive.
+- **Benefit:** Detects container failures quickly and ensures the project is always running as expected.
