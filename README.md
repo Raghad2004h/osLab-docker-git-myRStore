@@ -133,3 +133,13 @@ I added a **Docker Healthcheck** to ensure the container is running correctly.
 - **What it does:** Docker automatically checks the container's health every 30 seconds.
 - **Endpoint:** Uses `http://localhost:80` to verify the service is responsive.
 - **Benefit:** Detects container failures quickly and ensures the project is always running as expected.
+
+---
+
+## Bonus E: Simplification with Makefile
+
+To make the development process easier and faster, I created a **Makefile**. This allows anyone to manage the project using simple commands instead of long Docker instructions:
+
+- `make build`: To build the Docker image.
+- `make run`: To start the container on port 8080.
+- `make stop`: To stop and remove the running container.
