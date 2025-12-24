@@ -143,3 +143,15 @@ To make the development process easier and faster, I created a **Makefile**. Thi
 - `make build`: To build the Docker image.
 - `make run`: To start the container on port 8080.
 - `make stop`: To stop and remove the running container.
+
+---
+
+## Development Workflow
+
+This project follows a simple and professional GitHub workflow.
+
+- The `main` branch contains the stable version of the project.
+- New features or documentation updates are developed in separate feature branches.
+- All changes are merged into `main` using Pull Requests to ensure clean history and review.
+
+This workflow was used to demonstrate a professional PR-based development process.
