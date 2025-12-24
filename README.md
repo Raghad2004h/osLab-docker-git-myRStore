@@ -155,3 +155,14 @@ This project follows a simple and professional GitHub workflow.
 - All changes are merged into `main` using Pull Requests to ensure clean history and review.
 
 This workflow was used to demonstrate a professional PR-based development process.
+
+---
+
+## Screenshots & PR Workflow
+
+Some screenshots demonstrating the project:
+
+- Docker build success
+- Project running in browser
+
+All screenshots are stored in `docs/screenshots/`.
