@@ -166,3 +166,56 @@ Some screenshots demonstrating the project:
 - Project running in browser
 
 All screenshots are stored in `docs/screenshots/`.
+
+---
+
+# Assignment #3 – Docker Deployment on VPS
+
+## Project Description
+This project was originally developed in Assignment #2 and dockerized using Docker.
+In this assignment, the project is deployed to a VPS-like environment using Docker containers.
+
+---
+
+## Technologies Used
+- Docker
+- Git
+- Nginx
+- HTML / CSS / JavaScript
+
+---
+
+## Deployment Steps
+
+### 1. Install Git and Docker
+```bash
+sudo apt update
+sudo apt install git docker.io -y
+```
+
+### 2. Verify Installation
+```bash
+git --version
+docker --version
+```
+
+### 3. Clone the Repository
+```bash
+git clone https://github.com/Raghad2004h/osLab-docker-git-myRStore.git
+cd REPOSITORY
+```
+
+### 4. Build Docker Image
+```bash
+docker build -t myproject .
+```
+
+### 5. Run Docker Container
+```bash
+docker run -d -p 80:80 myproject
+```
+
+### 6. Verify Running Container
+```bash
+docker ps
+```
