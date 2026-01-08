@@ -223,3 +223,13 @@ docker ps
 ---
 
 ### Production URL: https://oslab-docker-git-myrstore-production.up.railway.app
+
+---
+
+### Screenshots
+All deployment steps are documented in `docs/screenshots/`:
+1. Git and Docker installation verification
+2. Cloning the repository
+3. Docker build process
+4. Running container
+5. Project running successfully on browser
