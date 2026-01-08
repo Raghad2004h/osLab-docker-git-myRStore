@@ -42,3 +42,14 @@ This taught me that **small details in documentation can take significant time t
 The most valuable lesson I learned is how Git and GitHub help organize work and protect progress.  
 At one point, my laptop shut down unexpectedly, but I didn’t lose any work because all changes were safely stored and versioned on GitHub.  
 This experience showed me the real importance of **version control** in professional development and project management.
+
+---
+
+# Deployment Notes
+
+- During this assignment, I spent four consecutive days trying to deploy the project on a VPS.  
+- Unfortunately, I could not find a free VPS provider that allowed me to deploy the project successfully.  
+- Despite this, I understood the assignment completely and learned all the required steps for deploying a Dockerized project.  
+- To demonstrate the workflow, I used a temporary provider (Railway) to run the Docker commands and take screenshots for the assignment.  
+- I made sure to document all the deployment steps, Dockerfile updates, and README instructions properly.  
+- Overall, I exerted effort and followed all required steps, but the limitations of free VPS providers prevented a full production deployment.
