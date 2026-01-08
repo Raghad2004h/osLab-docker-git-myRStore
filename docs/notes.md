@@ -53,3 +53,26 @@ This experience showed me the real importance of **version control** in professi
 - To demonstrate the workflow, I used a temporary provider (Railway) to run the Docker commands and take screenshots for the assignment.  
 - I made sure to document all the deployment steps, Dockerfile updates, and README instructions properly.  
 - Overall, I exerted effort and followed all required steps, but the limitations of free VPS providers prevented a full production deployment.
+
+- During this assignment, I spent four consecutive days trying to deploy the project on a VPS.  
+- I tried a variety of VPS and cloud providers, including:
+
+  - [Claw Cloud](https://run.claw.cloud/)
+  - DigitalOcean
+  - Linode (Akamai)
+  - Vultr
+  - Hetzner
+  - AWS (Amazon Web Services)
+  - Google Cloud Platform (GCP)
+  - Microsoft Azure
+  - Oracle Cloud
+  - GitHub Codespaces
+  - OVHcloud
+  - Contabo
+  - And the providers suggested by the course
+
+- I created accounts and attempted deployment on all of them, but none of the free options worked successfully for me.  
+- I am not sure if the issue was on my laptop or network, but despite that, I followed all the steps and understood the assignment completely.  
+- To demonstrate the workflow, I used a temporary provider (Railway) to run the Docker commands and take screenshots for the assignment.  
+- All deployment steps, Dockerfile updates, and README instructions were carefully documented.  
+- I worked hard, learned a lot, and ensured that the assignment demonstrates my understanding of deploying Dockerized projects, even though free VPS options were not functional for this attempt.
